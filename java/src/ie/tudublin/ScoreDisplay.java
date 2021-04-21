@@ -1,12 +1,13 @@
 package ie.tudublin;
 
 import java.util.ArrayList;
-
+/*
 import ddf.minim.AudioOutput;
 import ddf.minim.Minim;
 import ddf.minim.signals.Oscillator;
 import ddf.minim.ugens.Oscil;
-//import ddf.minim
+import ddf.minim.ugens.Instrument;
+*/
 import processing.core.PApplet;
 
 public class ScoreDisplay extends PApplet
@@ -15,8 +16,8 @@ public class ScoreDisplay extends PApplet
 	//String score = "D2E2F2G2A2B2c2d2";
 	//String score = "DEF2F2F2EFA2A2B2AFD2E2D2D2D2";
 	
-	ArrayList<Note> Notes = new ArrayList<Note>();
-
+	ArrayList<String> notes = new ArrayList<String>();
+	char result;
 	//schtuff in here later
 
 	public void settings()
@@ -32,18 +33,21 @@ public class ScoreDisplay extends PApplet
 	//used to populate ArrayList with contents of String score
 	public void loadScore()
 	{
-		for(int j = 0; j < score.length(); j++)
+		for(int i = 0; i< score.length();i++)
         {
-            result = score.charAt(j);
-            println(result);
-        }
+            result = score.charAt(i);
+			String score = String.valueOf(result);
+			notes.add(score);
+			println(notes);
+		}
+		
 	}
 
-	public void printScores()
+	/* public void printScores()
 	{
 		for (i<) 
             System.out.println("Number = " + number);
-	}
+	}*/
 
 	public void setup() 
 	{
