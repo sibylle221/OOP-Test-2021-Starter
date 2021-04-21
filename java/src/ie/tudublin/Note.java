@@ -6,7 +6,7 @@ public class Note {
    private char note;
 
 //generated constructor
-public Note(int duration, char note) {
+public Note(char note, int duration) {
     this.duration = duration;
     this.note = note;
 }
