@@ -1,6 +1,9 @@
 package ie.tudublin;
 
 import java.util.ArrayList;
+
+import javax.lang.model.util.ElementScanner6;
+
 /*
 import ddf.minim.AudioOutput;
 import ddf.minim.Minim;
@@ -33,9 +36,26 @@ public class ScoreDisplay extends PApplet
 	//used to populate ArrayList with contents of String score
 	public void loadScore()
 	{
-		for(int i = 0; i< score.length();i++)
+		for(int i = 0; i< score.length() - 1; i+=2)
         {
-            result = score.charAt(i);
+			/*//in case of odd number of charaters in a string
+			if(i + 1 >- score.length())
+			{
+				result = score.charAt(i);
+			}
+			else
+			{
+
+			}*/
+
+			if()
+			{
+
+			}
+			else
+			{
+				
+			}
 			String score = String.valueOf(result);
 			notes.add(score);
 			println(notes);
